@@ -1,0 +1,36 @@
+---
+title: "Shiny Application and Reproducible Pitch"
+author: "Juan A. Reyes D."
+date: "8/4/2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Overview
+
+This presentation contains documentation about the Shiny Application and Reproducible Pitch as part of a deliverable for the course Developing Data Products as part of the Coursera Data Science Specialization. This assignment has two parts:
+ 
+Shiny application. You can the source code for ui.R and server.R files are available on the GitHub repo <https://github.com/juanreyesduran/DS-Data_Products_Assignment3>
+
+Reproducible pitch presentation about Shiny application that you can see on <http://rpubs.com/juanreyesduran/378012>
+
+## Web Application Funcionality
+
+The sites is providing sidebar with controls to select the random distribution type 
+- Normal 
+- Uniform
+- Log-Normal
+- Exponential
+
+and number of observations is required and then plotted as a histogram.
+
+
+## Histogram
+
+```{r}
+data <- rnorm(1000,0,1)
+hist(data, main="rnorm(1000)", cex.axis=.8, xlim=c(-4,4), col="green")
+```
